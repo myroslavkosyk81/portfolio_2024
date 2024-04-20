@@ -18,11 +18,12 @@ const TransitionProvider = ({children}) => {
             />
             <motion.div  className="fixed m-auto top-0 bottom-0 left-0 right-0 text-white text-8xl cursor-default z-50 w-fit h-fit"
             initial={{opacity: 1}}
-            animate={{opacity: 0}}
+            animate={{y:-200, opacity: 0}}
             exit={{opacity: 0}}
             transition={{duration: 0.8, ease: 'easeOut'}}
             >
-              {pathName.substring(1)}
+              {/* {pathName.substring(1)!=""? pathName.substring(1, 101) : "home"} */}
+              {pathName.substring(1)!=""? pathName.substring(1, 101)[0].toUpperCase()+pathName.substring(2, 101) : "Home"}
             </motion.div>
 
             <motion.div  className="h-screen w-screen fixed bg-black rounded-t-[100px] bottom-0 z-30"

@@ -2,6 +2,7 @@
 import { delay, motion, useInView, useScroll  } from "framer-motion";
 import Image from 'next/image';
 import signature from  '../../../public/signature.svg';
+import arrowImg from  '../../../public/arrow.svg';
 import { useRef } from 'react';
 import Brain from "@/components/brain2";
 
@@ -36,21 +37,7 @@ const About = () => {
    // const isSkillRefInView = useInView(skillRef, {once:true}, {margin: "-300px"});
    const isSkillRefInView = useInView(skillRef, {margin: "-300px"});
    const experienceRef = useRef();
-   const isExperienceRefInView = useInView(experienceRef, {margin: "-400px"});
-   const container = {
-      hidden: { opacity: 0 },
-      show: {
-        opacity: 1,
-        transition: {
-          delayChildren: 0.5
-        }
-      }
-    }
-    
-    const item = {
-      hidden: { opacity: 0 },
-      show: { opacity: 1 }
-    }
+   const isExperienceRefInView = useInView(experienceRef, {margin: "-300px"});
 
    return (
       <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
@@ -74,15 +61,23 @@ const About = () => {
                   <Image className="self-end w-64"
                      src={signature}
                      alt="signature" />
+                    {/* arrow */}
+               <motion.div initial={{opacity: 0.2, y: 0}} animate={{opacity: 1, y: "10px"}} transition={{repeat:Infinity, duration: 2, ease: "easeInOut"}} className="w-6">
+                  <Image className="h-7"
+                     src={arrowImg}
+                     alt="arrow" />
+               </motion.div> 
                </div>
+               
+               
                {/* skills */}
                <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
-                  <motion.h1 variants={container} initial={{ x: "-300px"}} animate={isSkillRefInView ? { x: 0} : {}} transition={{delay: 0.2,  duration: 0.7 }} className="font-bold text-2xl">SKILLS</motion.h1>
+                  <motion.h1 initial={{ x: "-40px", opacity: 0}} animate={isSkillRefInView ? { x: 0, opacity: 1} : {}} transition={{delay: 0.2,  duration: 0.5 }} className="font-bold text-2xl">SKILLS</motion.h1>
                   {/* skill list */}
                   {/* <div>
                      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">JavaScript</div>
                   </div> */}
-                  <motion.div initial={{ x: "-2000px"}} animate={isSkillRefInView ? { x: 0} : {}} transition={{delay: 0.2,  duration: 0.7 }} className="flex flex-wrap gap-2 items-center justify-center">
+                  <motion.div initial={{ x: "-2000px", opacity: 0}} animate={isSkillRefInView ? { x: 0, opacity: 1} : {}} transition={{delay: 0.2,  duration: 1.2 }} className="flex flex-wrap gap-2 items-center justify-center">
                     <Image src={jsImg} alt="jsImg" className="h-12 w-auto" />
                     <Image src={htmlImg} alt="" className="h-12 w-auto" /> 
                     <Image src={cssImg} alt="" className="h-12 w-auto" />   
@@ -108,18 +103,23 @@ const About = () => {
                     
                 
                 </motion.div>
+                <motion.div initial={{opacity: 0.2, y: 0}} animate={{opacity: 1, y: "10px"}} transition={{repeat:Infinity, duration: 2, ease: "easeInOut"}} className="w-6">
+                  <Image className="h-7"
+                     src={arrowImg}
+                     alt="arrow" />
+               </motion.div>
                   {/* slill svg */}
                   {/* <Image className="self-end w-64"
                      src={signature}
                      alt="Follow us on Twitter" /> */}
                </div>
                {/* experience */}
-               <div className="flex flex-col gap-12 justify-center pb-48" ref={experienceRef}>
+               <div className="flex flex-col gap-4 md:gap-8 lg:gap-12 justify-center pb-48" ref={experienceRef}>
                   {/* experience title */}
-                  <motion.h1 initial={{x:"-2000px"}} animate={isExperienceRefInView ? {x:"0"} : {}} transition={{delay: 0.2,  duration: 0.7 }} className="font-bold text-2xl">EXPERIENCE</motion.h1>
+                  <motion.h1 initial={{x:"-2000px"}} animate={isExperienceRefInView ? {x:"0"} : {}} transition={{delay: 0.2,  duration: 0.5 }} className="font-bold text-2xl">EXPERIENCE</motion.h1>
                      
                      {/* experience list */}
-                     <motion.div initial={{x:"2000px"}} animate={isExperienceRefInView ? {x:"0"} : {}} transition={{delay: 0.2,  duration: 0.7 }} className="">
+                     <motion.div initial={{x:"2000px", opacity: 0}} animate={isExperienceRefInView ? {x:"0", opacity: 1} : {}} transition={{delay: 0.2,  duration: 1.2 }} className="">
                      
                      
                         {/* list item   1  */}
@@ -127,9 +127,9 @@ const About = () => {
                            
                            {/* left */}
                            <div className="w-1/3 bg">
-                              <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Frelance</div>
-                              <div className="p-3 text-sm italic">NEXT.JS</div>
-                              <div className="p-3 text-red-400 text-sm font-semibold">2024</div>
+                              <div className="bg-white p-1 md:p-3 font-semibold rounded-b-lg rounded-s-lg">Frelance</div>
+                              <div className="p-1 md:p-3 text-sm italic">NEXT.JS</div>
+                              <div className="p-1 md:p-3 text-red-400 text-sm font-semibold">2024</div>
                               <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Apple</div>
                            </div>
                            
@@ -165,9 +165,9 @@ const About = () => {
                            
                            {/* right */}
                            <div className="w-1/3">
-                              <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Frelance</div>
-                              <div className="p-3 text-sm italic">NEXT.JS</div>
-                              <div className="p-3 text-red-400 text-sm font-semibold">2024</div>
+                              <div className="bg-white p-1 md:p-3 font-semibold rounded-b-lg rounded-s-lg">Frelance</div>
+                              <div className="p-1 md:p-3 text-sm italic">NEXT.JS</div>
+                              <div className="p-1 md:p-3 text-red-400 text-sm font-semibold">2024</div>
                               <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Apple</div>
                            </div>
                         </div>
@@ -177,9 +177,9 @@ const About = () => {
                            
                            {/* left */}
                            <div className="w-1/3 bg">
-                              <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Frelance</div>
-                              <div className="p-3 text-sm italic">NEXT.JS</div>
-                              <div className="p-3 text-red-400 text-sm font-semibold">2024</div>
+                              <div className="bg-white p-1 md:p-3 font-semibold rounded-b-lg rounded-s-lg">Frelance</div>
+                              <div className="p-1 md:p-3 text-sm italic">NEXT.JS</div>
+                              <div className="p-1 md:p-3 text-red-400 text-sm font-semibold">2024</div>
                               <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Apple</div>
                            </div>
                            

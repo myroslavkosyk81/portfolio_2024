@@ -35,9 +35,9 @@ const About = () => {
 
    const skillRef = useRef();
    // const isSkillRefInView = useInView(skillRef, {once:true}, {margin: "-300px"});
-   const isSkillRefInView = useInView(skillRef, {margin: "-300px"});
+   const isSkillRefInView = useInView(skillRef, {margin: "-200px"});
    const experienceRef = useRef();
-   const isExperienceRefInView = useInView(experienceRef, {margin: "-300px"});
+   const isExperienceRefInView = useInView(experienceRef, {margin: "-200px"});
 
    return (
       <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>

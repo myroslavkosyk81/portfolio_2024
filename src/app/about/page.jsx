@@ -28,6 +28,7 @@ import eslint from "../../../public/img/eslint.svg";
 import nextjs from "../../../public/img/nextjs.png";
 import framer from "../../../public/img/framer.png";
 import swiper from  '../../../public/img/swiper-logo.svg';
+import emailjs from  '../../../public/img/emailjs.png';
 
 const About = () => {
    const containerRef = useRef();
@@ -78,28 +79,29 @@ const About = () => {
                      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">JavaScript</div>
                   </div> */}
                   <motion.div initial={{ x: "-2000px", opacity: 0}} animate={isSkillRefInView ? { x: 0, opacity: 1} : {}} transition={{delay: 0.2,  duration: 1.2 }} className="flex flex-wrap gap-2 items-center justify-center">
-                    <Image src={jsImg} alt="jsImg" className="h-12 w-auto" />
-                    <Image src={htmlImg} alt="" className="h-12 w-auto" /> 
-                    <Image src={cssImg} alt="" className="h-12 w-auto" />   
-                    <Image src={mongoImg} alt="" className="h-12 w-auto" />
-                    <Image src={expressImg} alt="" className="h-12 w-auto" />
-                    <Image src={reactImg} alt="" className="h-12 w-auto" />
-                    <Image src={nodeImg} alt="" className="h-12 w-auto" />
-                    <Image src={nextjs} alt="" className="h-12 w-auto" />
-                    <Image src={vite} alt="" className="h-12 w-auto" />
-                    <Image src={jwtImg} alt="" className="h-12 w-auto" />
-                    <Image src={axiosImg} alt="" className="h-4 w-auto flex items-center" />
-                    <Image src={reduxImg} alt="" className="h-12 w-auto" />
-                    <Image src={firebaseImg} alt="" className="h-12 w-auto" />
-                    <Image src={stripeImg} alt="" className="h-12 w-auto" />
-                    <Image src={tailwind} alt="" className="h-10 w-auto" />
-                    <Image src={muiImg} alt="" className="h-12 w-auto" />
-                    <Image src={styledImg} alt="" className="h-12 w-auto" />
-                    <Image src={swiper} alt="-" className="h-12 w-auto" />
-                    <Image src={framer} alt="" className="h-12 w-auto" />
-                    <Image src={i18} alt="" className="h-12 w-auto" />
-                    <Image src={eslint} alt="" className="h-12 w-auto" />
-                    <Image src={gitImg} alt="" className="h-12 w-auto" />
+                    <Image src={jsImg} alt="jsImg" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={htmlImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" /> 
+                    <Image src={cssImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />   
+                    <Image src={mongoImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={expressImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={reactImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={nodeImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={nextjs} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={vite} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={jwtImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={axiosImg} alt="" className="h-4 w-auto flex items-center hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={reduxImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={firebaseImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={stripeImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={tailwind} alt="" className="h-10 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={muiImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={styledImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={swiper} alt="-" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={framer} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={i18} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={eslint} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={gitImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
+                    <Image src={emailjs} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
                     
                 
                 </motion.div>

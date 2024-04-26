@@ -61,7 +61,7 @@ const About = () => {
                   Feel free to articulate your requirements, and I will meticulously analyze and propose a tailored solution. If you find my expertise aligns with your needs, please engage further; otherwise, I appreciate your consideration.
                   </p>
                   <p className="text-lg pt-1">
-                  Let's collaborate and turn your ideas into remarkable digital experiences! Here are a few technologies I have been working with recently:
+                  Let’s collaborate and turn your ideas into remarkable digital experiences! Here are a few technologies I have been working with recently:
                   </p>
                   {/* <p className="text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias explicabo sit blanditiis eaque recusandae ipsam, nesciunt eius fugit et ducimus dolore. Repudiandae, reiciendis tempora? Dolore inventore officiis aut nostrum facere.
                   </p> */}

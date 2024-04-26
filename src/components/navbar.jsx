@@ -80,13 +80,13 @@ const Navbar = () => {
          {/* social links */}
          <div className="hidden md:flex gap-4 w-1/3">
             <Link href='https://github.com/myroslavkosyk81'>
-               <img src='/github.png' alt='github' width ={24} height={24} />
+               <Image src='/github.png' alt='github' width ={24} height={24} />
             </Link>
             <Link href='https://www.facebook.com/myroslav.kosyk?locale=uk_UA'>
-               <img src='/facebook.png' alt='facebook' width ={24} height={24} />
+               <Image src='/facebook.png' alt='facebook' width ={24} height={24} />
             </Link>
             <Link href='https://www.linkedin.com/in/myroslav-kosyk-8b5155240/'>
-               <img src='/linkedin.png' alt='linkedin' width ={24} height={24} />
+               <Image src='/linkedin.png' alt='linkedin' width ={24} height={24} />
             </Link>
          </div>
          {/* menu */}

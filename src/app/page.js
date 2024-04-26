@@ -6,7 +6,8 @@ import { motion  } from "framer-motion";
 export default function Home() {
   return (
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 -mt-6">
+      {/* <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48"> */}
         <motion.div initial={{ x: "-40px", opacity: 0}} animate={{x: "0", opacity: 1}} transition={{delay: 1,  duration: 1.7 }} className="h-1/2 lg:h-full lg:w-1/2 relative">
           {/* img */}
           <Image src='/photo.png' alt="" fill className="object-contain" />

@@ -36,9 +36,9 @@ const About = () => {
 
    const skillRef = useRef();
    // const isSkillRefInView = useInView(skillRef, {once:true}, {margin: "-300px"});
-   const isSkillRefInView = useInView(skillRef, {margin: "-200px"});
+   const isSkillRefInView = useInView(skillRef, {margin: "-50px"});
    const experienceRef = useRef();
-   const isExperienceRefInView = useInView(experienceRef, {margin: "-200px"});
+   const isExperienceRefInView = useInView(experienceRef, {margin: "-50px"});
 
    return (
       <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
@@ -79,31 +79,102 @@ const About = () => {
                      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">JavaScript</div>
                   </div> */}
                   <motion.div initial={{ x: "-2000px", opacity: 0}} animate={isSkillRefInView ? { x: 0, opacity: 1} : {}} transition={{delay: 0.2,  duration: 1.2 }} className="flex flex-wrap gap-2 items-center justify-center">
-                    <Image src={jsImg} alt="jsImg" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={htmlImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" /> 
-                    <Image src={cssImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />   
-                    <Image src={mongoImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={expressImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={reactImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={nodeImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={nextjs} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={vite} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={jwtImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={axiosImg} alt="" className="h-4 w-auto flex items-center hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={reduxImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={firebaseImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={stripeImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={tailwind} alt="" className="h-10 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={muiImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={styledImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={swiper} alt="-" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={framer} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={i18} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={eslint} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={gitImg} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    <Image src={emailjs} alt="" className="h-12 w-auto hover:scale-[1.5] transition-scale duration-300" />
-                    
-                
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={jsImg} alt="jsImg" className="h-12 w-auto " />
+                        <span className=" text-sm">JavaScript</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={htmlImg} alt="" className="h-12 w-auto" />
+                        <span className=" text-sm">HTML 5</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={cssImg} alt="" className="h-12 w-auto" />
+                        <span className=" text-sm">CSS</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={mongoImg} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">MongoDB</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={expressImg} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">Express.js</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={reactImg} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">React</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={nodeImg} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">Node.js</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={nextjs} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">Next.js</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={vite} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">Vite</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={jwtImg} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">JSON Web Token</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <div className=" flex items-center justify-center h-12 w-auto ">
+                           <Image src={axiosImg} alt="" className="h-4 w-auto" />
+                        </div>
+                        
+                        <span className=" text-sm">Axios</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={reduxImg} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">Redux</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={firebaseImg} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">Firebase</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={stripeImg} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">Stripe</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={tailwind} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">Tailwind CSS</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={muiImg} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">MUI</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={styledImg} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">Styled-components</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={swiper} alt="-" className="h-12 w-auto " />
+                        <span className=" text-sm">Swiper</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={framer} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">Framer</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={i18} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">i18next</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={eslint} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">ESLint</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={emailjs} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">EmailJS</span>
+                     </div>
+                     <div className="flex items-center justify-center flex-col rounded p-2 text-sm cursor-pointer hover:scale-[1.5] transition-scale duration-300">
+                        <Image src={gitImg} alt="" className="h-12 w-auto " />
+                        <span className=" text-sm">GitHub</span>
+                     </div>
+                     
                 </motion.div>
                 <motion.div initial={{opacity: 0.2, y: 0}} animate={{opacity: 1, y: "10px"}} transition={{repeat:Infinity, duration: 2, ease: "easeInOut"}} className="w-6">
                   <Image className="h-7"

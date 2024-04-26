@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import Link from "next/link";
 import { motion  } from "framer-motion";
 
 export default function Home() {
@@ -17,10 +18,21 @@ export default function Home() {
             Hello! Welcome to my digital world of code! I am a software developer specializing in building websites and applications using JavaScript, React, Node JS
           </p>
           {/* duttons */}
-          <motion.div initial={{ y: "40px", opacity: 0}} animate={{y: "0", opacity: 1}} transition={{delay: 2,  duration: 1.7 }} className=" flex gap-4">
-            <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">View my works</button>
-            <button className="p-4 rounded-lg ring-1 ring-black">Contact Me</button>
+          <div className=" flex gap-4">
+            <motion.div initial={{ y: "40px", opacity: 0}} animate={{y: "0", opacity: 1}} transition={{delay: 2,  duration: 1.7 }} className=" flex gap-4">
+            <Link href='/portfolio' >
+               <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">View my works</button>         
+            </Link>
           </motion.div>
+          
+          <motion.div initial={{ y: "40px", opacity: 0}} animate={{y: "0", opacity: 1}} transition={{delay: 2.5,  duration: 1.7 }} className=" flex gap-4">
+            
+            <Link href='/contact' >
+            <button className="p-4 rounded-lg ring-1 ring-black">Contact Me</button>         
+            </Link>
+          </motion.div>
+          </div>
+          
         </motion.div>
     </div>
     </motion.div>

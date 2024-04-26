@@ -50,15 +50,22 @@ const About = () => {
             </div>
             
             {/* text */}
-            <div className="p-4 absolute top-20 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:pr-0 xl:1/2 z-30">
+            <div className="p-4 absolute top-20 sm:p-8 md:p-12 lg:p-20 xl:p-24 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:pr-0 xl:1/2 z-30">
                {/* biography */}
                <div className="flex flex-col gap-12 justify-center">
-                  <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
-                  <p className="text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias explicabo sit blanditiis eaque recusandae ipsam, nesciunt eius fugit et ducimus dolore. Repudiandae, reiciendis tempora? Dolore inventore officiis aut nostrum facere.
+                  <h1 className="font-bold text-2xl">ABOUT ME</h1>
+                  <p className="text-lg pt-1">Myroslav Kosyk, who helps small and medium businesses particularly agencies or companies and individuals by providing top-notch, high-quality and reliable website development support.
                   </p>
-                  <p className="text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias explicabo sit blanditiis eaque recusandae ipsam, nesciunt eius fugit et ducimus dolore. Repudiandae, reiciendis tempora? Dolore inventore officiis aut nostrum facere.
+                  <p className="text-lg pt-1">
+                  So they can focus on what they do best, increase productivity, take on new clients and grow their business. He has partnered with businesses, marketing professionals, agencies, and consultancies from around the world since 2021, becoming his extended development department.
+                  Feel free to articulate your requirements, and I will meticulously analyze and propose a tailored solution. If you find my expertise aligns with your needs, please engage further; otherwise, I appreciate your consideration.
                   </p>
-                  <span className="italic">something</span>
+                  <p className="text-lg pt-1">
+                  Let's collaborate and turn your ideas into remarkable digital experiences! Here are a few technologies I have been working with recently:
+                  </p>
+                  {/* <p className="text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias explicabo sit blanditiis eaque recusandae ipsam, nesciunt eius fugit et ducimus dolore. Repudiandae, reiciendis tempora? Dolore inventore officiis aut nostrum facere.
+                  </p> */}
+                  {/* <span className="italic">something</span> */}
                   <Image className="self-end w-64"
                      src={signature}
                      alt="signature" />
@@ -200,10 +207,10 @@ const About = () => {
                            
                            {/* left */}
                            <div className="w-1/3 bg">
-                              <div className="bg-white p-1 md:p-3 font-semibold rounded-b-lg rounded-s-lg">Frelance</div>
-                              <div className="p-1 md:p-3 text-sm italic">NEXT.JS</div>
+                              <div className="bg-white p-1 md:p-3 font-semibold rounded-b-lg rounded-s-lg">Freelance</div>
+                              <div className="p-1 md:p-3 text-sm italic">Next.js, Vite,Tailwind CSS, i18next, Swiper, Framer, EmailJS</div>
                               <div className="p-1 md:p-3 text-red-400 text-sm font-semibold">2024</div>
-                              <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Apple</div>
+                              {/* <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Freelance</div> */}
                            </div>
                            
                            {/* center */}
@@ -238,10 +245,10 @@ const About = () => {
                            
                            {/* right */}
                            <div className="w-1/3">
-                              <div className="bg-white p-1 md:p-3 font-semibold rounded-b-lg rounded-s-lg">Frelance</div>
-                              <div className="p-1 md:p-3 text-sm italic">NEXT.JS</div>
-                              <div className="p-1 md:p-3 text-red-400 text-sm font-semibold">2024</div>
-                              <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Apple</div>
+                              <div className="bg-white p-1 md:p-3 font-semibold rounded-b-lg rounded-s-lg">Freelance</div>
+                              <div className="p-1 md:p-3 text-sm italic">Vite, Firebase, Mui, Styled-components, Stripe, ESLint</div>
+                              <div className="p-1 md:p-3 text-red-400 text-sm font-semibold">2023</div>
+                              {/* <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Freelance</div> */}
                            </div>
                         </div>
                         
@@ -250,10 +257,10 @@ const About = () => {
                            
                            {/* left */}
                            <div className="w-1/3 bg">
-                              <div className="bg-white p-1 md:p-3 font-semibold rounded-b-lg rounded-s-lg">Frelance</div>
-                              <div className="p-1 md:p-3 text-sm italic">NEXT.JS</div>
-                              <div className="p-1 md:p-3 text-red-400 text-sm font-semibold">2024</div>
-                              <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Apple</div>
+                              <div className="bg-white p-1 md:p-3 font-semibold rounded-b-lg rounded-s-lg">Freelance</div>
+                              <div className="p-1 md:p-3 text-sm italic">JS, HTML, CSS, Node.js, MongoDB, Express, React, Redux, JSON Web Token, Axios, GitHub</div>
+                              <div className="p-1 md:p-3 text-red-400 text-sm font-semibold">2021-2022</div>
+                              {/* <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Freelance</div> */}
                            </div>
                            
                            {/* center */}

@@ -15,7 +15,7 @@ export default function Home() {
         <motion.div initial={{ x: "40px", opacity: 0}} animate={{x: "0", opacity: 1}} transition={{delay: 1.5,  duration: 1.7 }} className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           <h1 className="text-4xl md:text-6xl font-bold">Creating web apps</h1>
           <p className="md:text-xl">
-            Hello! Welcome to my digital world of code! I am a software developer specializing in building websites and applications using JavaScript, React, Node JS
+            Hello! Welcome to my digital world of code! I am a software developer specializing in building websites and applications using JavaScript, React, Node.js, Next.js
           </p>
           {/* duttons */}
           <div className=" flex gap-4">

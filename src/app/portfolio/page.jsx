@@ -9,38 +9,45 @@ import Items from "../../../public/portfolio.js"
 //    {
 //      id: 1,
 //      color: "from-red-300 to-blue-300",
-//      title: "React Commerce",
-//      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-//      img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-//      link: "https://lama.dev",
+//      title: "Real Estate app",
+//      desc: "BestDomivka - це платформа, яка пропонує вам найкращі пропозиції нерухомості в Україні. Ми не просто черговий онлайн-сервіс, ми пропонуємо вам справжню якість і задоволення.",
+//      img: "https://firebasestorage.googleapis.com/v0/b/portfolio2-85c57.appspot.com/o/best_domivka.jpg?alt=media&token=7c5efffa-8d8b-4d70-b333-7db3125b4f44",
+//      link: "https://mern-real-estate-app-ut58.onrender.com",
 //    },
 //    {
 //      id: 2,
 //      color: "from-blue-300 to-violet-300",
-//      title: "Next.js Medium Blog",
-//      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-//      img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-//      link: "https://lama.dev",
+//      title: "YummyCakes online store (e-commerce project)",
+//      desc: "An eCommerce project developed using MERN technologies. It is a vast project involving front and back-end technologies and database knowledge for efficient execution and implementation. Also developed an application for administration of eCommerce app, which allows working with products, users, administration of sales statistics, etc.",
+//      img: "https://firebasestorage.googleapis.com/v0/b/portfolio2-85c57.appspot.com/o/yummycakesuser.jpg?alt=media&token=a532d1d0-7494-425f-accd-36affabeb99e",
+//      link: "https://yummycakesuser.vercel.app/",
 //    },
 //    {
 //      id: 3,
 //      color: "from-violet-300 to-purple-300",
-//      title: "Vanilla Book App",
-//      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-//      img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-//      link: "https://lama.dev",
+//      title: "Admin dashboard for YummyCakes online store",
+//      desc: "An eCommerce project developed using MERN technologies. It is a vast project involving front and back-end technologies and database knowledge for efficient execution and implementation. Also developed an application for administration of eCommerce app, which allows working with products, users, administration of sales statistics, etc.",
+//      img: "https://firebasestorage.googleapis.com/v0/b/portfolio2-85c57.appspot.com/o/yummycakesAdmin.jpg?alt=media&token=05d6cfac-f123-403e-a95e-45f0c39e8d9a",
+//      link: "https://yummycakes-admin.vercel.app/products",
 //    },
 //    {
 //      id: 4,
 //      color: "from-purple-300 to-red-300",
-//      title: "Spotify Music App",
-//      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-//      img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-//      link: "https://lama.dev",
+//      title: "Portfolio React App",
+//      desc: "My first portfolio site.",
+//      img: "https://firebasestorage.googleapis.com/v0/b/portfolio2-85c57.appspot.com/o/portfolio.jpg?alt=media&token=50b4706c-99ac-46d5-b6b4-5bd19d1b3a56",
+//      link: "https://portfolio-mk-2023.vercel.app/",
+//    },
+//    {
+//      id: 5,
+//      color: "from-purple-300 to-red-300",
+//      title: "LearnAndGrow studying platform",
+//      desc: "A learning platform developed for schoolchildren. Allows schoolchildren to write down and use all the necessary knowledge previously entered. It is a vast project involving front and back-end technologies and database knowledge for efficient execution and implementation.",
+//      img: "https://firebasestorage.googleapis.com/v0/b/portfolio2-85c57.appspot.com/o/learnandgrow.jpg?alt=media&token=15fd3be4-e945-4a93-98a9-a78ee2882f87",
+//      link: "https://learnandgrow.vercel.app/",
 //    },
 //  ];
  
-
 const Portfolio = () => {
    const ref = useRef();
    const { scrollYProgress } = useScroll({ target: ref})
@@ -59,7 +66,7 @@ const Portfolio = () => {
                      <div className={` h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`} key={item.id}>
                         
                         <div className=" flex flex-col gap-8 text-white">
-                           <h1 className=" text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">{item.title}</h1>
+                           <h1 className=" text-xl font-bold md:text-4xl lg:text-4xl xl:text-6xl">{item.title}</h1>
                            <div className=" relative w-80 h-56 md:w-96 md:h-64 lg:w-[450px] lg:h-[300px] xl:w-[500px] xl:h-[320px]">
                               <Image fill={true} src={item.img} alt=""></Image>
                            </div>
@@ -71,6 +78,7 @@ const Portfolio = () => {
                         
                      </div>
                   ))}
+                  <div className=" h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-200 to-red-200"/>
                   <div className=" h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-200 to-red-200"/>
                </motion.div>
                

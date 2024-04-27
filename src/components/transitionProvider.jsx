@@ -11,7 +11,7 @@ const TransitionProvider = ({children}) => {
    return (
       <AnimatePresence mode="wait">
          <div key={pathName} className="w-screen h-screen bg-gradient-to-b from-blue-200 to-red-200">
-            <motion.div  className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
+            <motion.div  className="h-screen w-screen fixed bg-indigo-900 rounded-b-[100px] z-40"
             animate={{height: '0vh'}}
             exit={{height: "140vh"}}
             transition={{duration: 0.5, ease: 'easeOut'}}
@@ -26,7 +26,7 @@ const TransitionProvider = ({children}) => {
               {pathName.substring(1)!=""? pathName.substring(1, 101)[0].toUpperCase()+pathName.substring(2, 101) : "Home"}
             </motion.div>
 
-            <motion.div  className="h-screen w-screen fixed bg-black rounded-t-[100px] bottom-0 z-30"
+            <motion.div  className="h-screen w-screen fixed bg-indigo-900 rounded-t-[100px] bottom-0 z-30"
             initial={{height: '140vh'}}
             animate={{ height: "0vh", transition: {delay: 0.5} }}
             />

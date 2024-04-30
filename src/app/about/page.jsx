@@ -70,8 +70,8 @@ const About = () => {
                      src={signature}
                      alt="signature" />
                     {/* arrow */}
-               <motion.div initial={{opacity: 0.2, y: 0}} animate={{opacity: 1, y: "10px"}} transition={{repeat:Infinity, duration: 2, ease: "easeInOut"}} className="w-6">
-                  <Image className="h-7"
+               <motion.div initial={{opacity: 0.2, y: 0}} animate={{opacity: 1, y: "10px"}} transition={{repeat:Infinity, duration: 2, ease: "easeInOut"}} className="w-20">
+                  <Image className="h-12"
                      src={arrowImg}
                      alt="arrow" />
                </motion.div> 
@@ -183,8 +183,8 @@ const About = () => {
                      </div>
                      
                 </motion.div>
-                <motion.div initial={{opacity: 0.2, y: 0}} animate={{opacity: 1, y: "10px"}} transition={{repeat:Infinity, duration: 2, ease: "easeInOut"}} className="w-6">
-                  <Image className="h-7"
+                <motion.div initial={{opacity: 0.2, y: 0}} animate={{opacity: 1, y: "10px"}} transition={{repeat:Infinity, duration: 2, ease: "easeInOut"}} className="w-20">
+                  <Image className="h-12"
                      src={arrowImg}
                      alt="arrow" />
                </motion.div>

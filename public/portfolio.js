@@ -33,7 +33,7 @@ const items = [
    },
    {
      id: 5,
-     color: "from-purple-300 to-red-300",
+     color: "from-red-300 to-blue-300",
      title: "LearnAndGrow study platform",
      desc: "A learning platform developed for schoolchildren. Allows schoolchildren to write down and use all the necessary knowledge previously entered. It is a vast project involving front and back-end technologies and database knowledge for efficient execution and implementation.",
      img: "https://firebasestorage.googleapis.com/v0/b/portfolio2-85c57.appspot.com/o/learnandgrow.jpg?alt=media&token=15fd3be4-e945-4a93-98a9-a78ee2882f87",

@@ -6,9 +6,9 @@ import { motion  } from "framer-motion";
 export default function Home() {
   return (
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 -mt-10 md:p-0">
+      <div className="flex flex-col h-full  lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 -mt-10 md:p-0">
       {/* <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48"> */}
-        <motion.div initial={{ x: "-40px", opacity: 0}} animate={{x: "0", opacity: 1}} transition={{delay: 1,  duration: 1.7 }} className="h-1/2 lg:h-full lg:w-1/2 relative">
+        <motion.div initial={{ x: "-40px", opacity: 0}} animate={{x: "0", opacity: 1}} transition={{delay: 1,  duration: 1.7 }} className="h-1/2 lg:h-full lg:w-1/2 relative -mb-5 md:mb-0">
           {/* img */}
           <Image src='/photo.png' alt="" fill className="object-contain" />
         </motion.div>
@@ -22,14 +22,14 @@ export default function Home() {
           <div className=" flex gap-4">
             <motion.div initial={{ y: "40px", opacity: 0}} animate={{y: "0", opacity: 1}} transition={{delay: 2,  duration: 1.7 }} className=" flex gap-4">
             <Link href='/portfolio' >
-               <button className="p-2 md:p-4 rounded-lg ring-1 ring-indigo-900 bg-indigo-900 text-white">View my works</button>         
+               <button className="p-2 md:p-4 rounded-lg ring-1 ring-indigo-950 bg-indigo-950 text-white">View my works</button>         
             </Link>
           </motion.div>
           
           <motion.div initial={{ y: "40px", opacity: 0}} animate={{y: "0", opacity: 1}} transition={{delay: 2.5,  duration: 1.7 }} className=" flex gap-4">
             
             <Link href='/contact' >
-            <button className="p-2 md:p-4 rounded-lg ring-1 ring-indigo-900">Contact Me</button>         
+            <button className="p-2 md:p-4 rounded-lg ring-1 ring-indigo-950 text-indigo-950">Contact Me</button>         
             </Link>
           </motion.div>
           </div>

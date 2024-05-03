@@ -80,7 +80,8 @@ const About = () => {
                
                {/* skills */}
                <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
-                  <motion.h1 initial={{ x: "-40px", opacity: 0}} animate={isSkillRefInView ? { x: 0, opacity: 1} : {}} transition={{delay: 0.2,  duration: 0.5 }} className="font-bold text-2xl">SKILLS</motion.h1>
+                  <motion.h1 initial={{ x: "-40px", opacity: 0}} animate={isSkillRefInView ? { x: 0, opacity: 1} : {}} transition={{delay: 0,  duration: 1.5 }} className="font-bold text-2xl">SKILLS</motion.h1>
+                  
                   {/* skill list */}
                   {/* <div>
                      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">JavaScript</div>
@@ -196,7 +197,7 @@ const About = () => {
                {/* experience */}
                <div className="flex flex-col gap-4 md:gap-8 lg:gap-12 justify-center pb-48" ref={experienceRef}>
                   {/* experience title */}
-                  <motion.h1 initial={{x:"-2000px"}} animate={isExperienceRefInView ? {x:"0"} : {}} transition={{delay: 0.2,  duration: 0.5 }} className="font-bold text-2xl">EXPERIENCE</motion.h1>
+                  <motion.h1 initial={{x:"-260px"}} animate={isExperienceRefInView ? {x:"0"} : {}} transition={{delay: 0,  duration: 1.5 }} className="font-bold text-2xl">EXPERIENCE</motion.h1>
                      
                      {/* experience list */}
                      <motion.div initial={{x:"2000px", opacity: 0}} animate={isExperienceRefInView ? {x:"0", opacity: 1} : {}} transition={{delay: 0.2,  duration: 1.2 }} className="">

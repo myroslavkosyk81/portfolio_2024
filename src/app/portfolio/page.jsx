@@ -65,11 +65,18 @@ const Portfolio = () => {
                   {Items.map((item) => (
                      <div className={` h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`} key={item.id}>
                         
-                        <div className=" flex flex-col gap-8 text-white ">
+                        
+                        <div className=" flex flex-col gap-8 md:gap-4 text-white ">
                            <h1 className=" text-xl font-bold md:text-4xl lg:text-4xl xl:text-6xl h-[10vh]">{item.title}</h1>
-                           <div className=" relative w-80 h-56 md:w-96 md:h-64 lg:w-[450px] lg:h-[300px] xl:w-[500px] xl:h-[320px]">
+                           {/* <div className=" relative w-80 h-56 md:w-96 md:h-64 lg:w-[450px] lg:h-[300px] xl:w-[500px] xl:h-[320px]">
                               <Image fill={true} src={item.img} alt=""></Image>
+                           </div> */}
+                           
+                           <div style={{'--image-url': `url(${item.img})`}} className="bg-[image:var(--image-url)] bg-cover md:bg-cover relative w-[90vw] h-[40vw] md:w-[80vw] md:h-[36vw] lg:w-[60vw] lg:h-[40vh] xl:w-[56vw] xl:h-[48vh]">
+                              
                            </div>
+
+                           
                            <p className=" w-80 md:w-96 lg:w-[500px] lg:text-lg xl:-[600px] h-[20vh]">{item.desc}</p>
                            <div className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:-[600px]">
                               <Link href={item.link} className="flex justify-end">

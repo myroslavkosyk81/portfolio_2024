@@ -33,7 +33,7 @@ const Contact = () => {
 
    return (
       <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
-         <div className=" h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+         <div className=" h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 overflow-scroll overflow-x-hidden lg:overflow-y-hidden">
             {/* text */}
             <div className=" h-1/4 lg:h-full lg:w-1/2 flex items-center justify-center text-3xl md:text-6xl">
                <motion.div>
@@ -44,7 +44,7 @@ const Contact = () => {
                </motion.div>
             </div>
             {/* form */}
-            <form onSubmit={sendEmail} ref={form} className=" h-3/4 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-4 sm:p-8 md:p-12 lg:p-24" action="">
+            <form onSubmit={sendEmail} ref={form} className=" h-[500px] lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 lg:justify-center p-4 sm:p-8 md:p-12 lg:p-24" action="">
                <span>Dear Myroslav,</span>
                <textarea rows={3} className=" bg-transparent border-b-2 border-b-black outline-none resize-none" name="user_message" />
                <span>My mail address is:</span>

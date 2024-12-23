@@ -5,7 +5,8 @@ const items = [
      title: "Real Estate app",
      desc: "BestDomivka - це платформа, яка пропонує вам найкращі пропозиції нерухомості в Україні. Ми не просто черговий онлайн-сервіс, ми пропонуємо вам справжню якість і задоволення.",
      img: "https://firebasestorage.googleapis.com/v0/b/portfolio2-85c57.appspot.com/o/best_domivka.jpg?alt=media&token=7c5efffa-8d8b-4d70-b333-7db3125b4f44",
-     link: "https://mern-real-estate-app-ut58.onrender.com",
+     link: "https://real-estate-front-vercel.vercel.app",
+     //link: "https://mern-real-estate-app-ut58.onrender.com",
    },
    {
      id: 2,

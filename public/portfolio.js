@@ -13,7 +13,7 @@ const items = [
      color: "from-blue-300 to-violet-300",
      title: "Lily cleaning service",
      desc: "Lily cleaning service website",
-     img: "https://firebasestorage.googleapis.com/v0/b/portfolio2-85c57.appspot.com/o/best_domivka.jpg?alt=media&token=7c5efffa-8d8b-4d70-b333-7db3125b4f44",
+     img: "https://firebasestorage.googleapis.com/v0/b/portfolio2-85c57.appspot.com/o/cleaning.jpg?alt=media&token=5c0933f5-3bfc-4e09-826f-497a2de2bd1e",
      link: "https://lilycleaning.vercel.app/",
    },
    {
